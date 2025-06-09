@@ -110,8 +110,8 @@ if __name__ == "__main__":
     for test in tests:
         try:
             test()
-            print(f"✅ {test.__name__} passed")
+            print(f"{test.__name__} passed")
         except Exception as e:
-            print(f"❌ {test.__name__} failed: {e}")
+            print(f"{test.__name__} failed: {e}")
 
     driver.quit()
